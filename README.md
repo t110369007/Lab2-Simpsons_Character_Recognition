@@ -4,8 +4,8 @@
 1. Python 3.8
 2. Window 10
 3. Ananconda
-4. Cuda 11.4
-5. Cudnn 8.25
+4. Cuda 11.1
+5. Cudnn 8.05
 
 
 
