@@ -1,0 +1,15 @@
+requirement.txt
+
+window 10
+cuda 11.4
+cudnn 8.25
+Python 3.7
+
+Use the following steps in your googld cloud
+1. upload Lab2_simpsons.ipynb 
+2. create /data/train, /data/test folder
+3. upload all the data files under /data  
+4. 選擇 "執行階段"-> "變更執行階段類型"->"硬體加速器" GPU
+5. 選擇 "執行階段"-> "全部執行"
+
+   
