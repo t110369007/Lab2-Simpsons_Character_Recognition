@@ -1,9 +1,9 @@
 requirement.txt
 
 window 10
-cuda 11.4
-cudnn 8.25
-Python 3.7
+cuda 11.1
+cudnn 8.05
+Python 3.8
 
 Use the following steps in your googld cloud
 1. upload Lab2_simpsons.ipynb 
