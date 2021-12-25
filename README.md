@@ -36,11 +36,12 @@ Let's load these images off disk using the helpful tf.keras.utils.image_dataset_
 ## Create a dataset
 
 ## Visualize the data
+![image](https://user-images.githubusercontent.com/93765298/147376625-33f7f1f0-1efd-4d13-8960-0706aa0702b5.png)
 
 ## Create the model
 The Sequential model consists of three convolution blocks (tf.keras.layers.Conv2D) with a max pooling layer (tf.keras.layers.MaxPooling2D) in each of them. There's a fully-connected layer (tf.keras.layers.Dense) with 128 units on top of it that is activated by a ReLU activation function ('relu'). This model has not been tuned for high accuracy—the goal of this tutorial is to show a standard approach.
 
-![image](https://user-images.githubusercontent.com/93765298/147376625-33f7f1f0-1efd-4d13-8960-0706aa0702b5.png)
+
 
 
 ## Configure the dataset for performance¶
