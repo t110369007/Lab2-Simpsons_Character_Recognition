@@ -1,5 +1,15 @@
 # Lab2-Simpsons_Character_Recognition
 
+## 心得分享
+1. 一開始還是使用比較熟悉的Google Colab 環境執行專案，但因為dataset 在雲端，執行時，資料傳來傳去很慢，在加上training 時間過長，最後還是選擇放棄。
+2. 原本已經建立好Ubuntu 環境，包括 anaconda, cuda, cudnn 等。也可執行。
+      但ubuntu 環境自己不夠熟悉，常常遇到系統問題，e.g. Infinite login loop, …導致花費很多時間在維護系統，基於時間考量，最後暫時放棄，希望下一個題目能用	ubuntu 環境來執行。
+3. 有試用Transfer learning, e.g. ResNET, VGG 等，但執行時間很長，最後還是用CNN架構，得到一定程度結果，希望下次再試用transfer learning.  
+
+
+
+
+
 ## system requirement
 1. Python 3.8
 2. Window 10
