@@ -60,9 +60,6 @@ The Sequential model consists of three convolution blocks (tf.keras.layers.Conv2
 ![image](https://user-images.githubusercontent.com/93765298/147432847-128ff193-990f-42d7-820e-6cf701ef4cc9.png)
 
 
-
-## Configure the dataset for performance¶
-
 ![image](https://user-images.githubusercontent.com/93765298/147432912-0a98c4ba-77be-4247-b7a2-6706068a04e1.png)
 
 
