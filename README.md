@@ -38,6 +38,8 @@ Improve the model and repeat the process
 ## Import TensorFlow and other libraries
 
 ## Download and explore the dataset
+![image](https://user-images.githubusercontent.com/93765298/147432870-32bc1a5f-1331-4f0f-b784-81afa9ded9d2.png)
+
 
 ## Load data using a Keras utility
 
@@ -45,35 +47,42 @@ Let's load these images off disk using the helpful tf.keras.utils.image_dataset_
 
 ## Create a dataset
 
+
+![image](https://user-images.githubusercontent.com/93765298/147432769-1a9eeb36-fe92-4529-bdee-f144c3a4b107.png)
+
+
 ## Visualize the data
 ![image](https://user-images.githubusercontent.com/93765298/147376625-33f7f1f0-1efd-4d13-8960-0706aa0702b5.png)
 
 ## Create the model
 The Sequential model consists of three convolution blocks (tf.keras.layers.Conv2D) with a max pooling layer (tf.keras.layers.MaxPooling2D) in each of them. There's a fully-connected layer (tf.keras.layers.Dense) with 128 units on top of it that is activated by a ReLU activation function ('relu'). This model has not been tuned for high accuracy—the goal of this tutorial is to show a standard approach.
 
+![image](https://user-images.githubusercontent.com/93765298/147432847-128ff193-990f-42d7-820e-6cf701ef4cc9.png)
 
 
 
 ## Configure the dataset for performance¶
-Let's make sure to use buffered prefetching so you can yield data from disk without having I/O become blocking. These are two important methods you should use when loading data:
 
-Dataset.cache keeps the images in memory after they're loaded off disk during the first epoch. This will ensure the dataset does not become a bottleneck while training your model. If your dataset is too large to fit into memory, you can also use this method to create a performant on-disk cache.
-Dataset.prefetch overlaps data preprocessing and model execution while training.
-Interested readers can learn more about both methods, as well as how to cache data to disk in the Prefetching section of the Better performance with the tf.data API guide.
+![image](https://user-images.githubusercontent.com/93765298/147432912-0a98c4ba-77be-4247-b7a2-6706068a04e1.png)
 
 
 ## Standardize the data
 The RGB channel values are in the [0, 255] range. This is not ideal for a neural network; in general you should seek to make your input values small.
 
 Here, you will standardize values to be in the [0, 1] range by using tf.keras.layers.Rescaling:
+![image](https://user-images.githubusercontent.com/93765298/147432930-d76b665e-38e5-46f1-b390-d51df5e23da1.png)
 
 ## Compile the model
 ## Model summary
 ## Train the model
+![image](https://user-images.githubusercontent.com/93765298/147432939-c6d5a98c-4545-447e-bf09-2eb6de3c6813.png)
+
 ## Data augmentation
 ## Dropout
 ## Visualize training results
 ## Predict on new data
+![image](https://user-images.githubusercontent.com/93765298/147432949-f1a3bf95-184d-4003-9daf-017168d8be50.png)
+
 
 
 
